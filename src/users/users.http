@@ -1,26 +1,26 @@
-###
-GET localhost:3000/users
+### // fetch all the users
+GET http://localhost:3000/users
 
-###
-GET localhost:3000/users/1
+### // fetch a specif user
+GET http://localhost:3000/users/2
 
-###
-POST localhost:3000/users
+### // create a user
+POST http://localhost:3000/users
 Content-Type: application/json
 
 {
-  "name": "Carl",
+  "name": "Joe",
   "age": 55,
   "role": "ADMIN"
 }
 
-###
-PATCH localhost:3000/users/3
+### // update a user
+PATCH http://localhost:3000/users/3
 Content-Type: application/json
 
 {
   "age": 80
 }
 
-###
-DELETE localhost:3000/users/2
+### // delete a user
+DELETE http://localhost:3000/users/2
