@@ -1,0 +1,26 @@
+###
+GET localhost:3000/todos
+
+###
+GET localhost:3000/todos/1
+
+###
+POST localhost:3000/todos
+Content-Type: application/json
+
+{
+  "title": "Nest.js Homework",
+  "text": "Complete todos module before next class",
+  "completed": false
+}
+
+###
+PATCH localhost:3000/todos/3
+Content-Type: application/json
+
+{
+  "completed": true
+}
+
+###
+DELETE localhost:3000/todos/2
