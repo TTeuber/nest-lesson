@@ -19,10 +19,10 @@ import { UpdateUserDto } from './dto/update-user.dto';
  * - Used for type checking: getUsers(): User[] tells TypeScript to expect an array of Users
  */
 export interface User {
-  id: number;                              // Unique identifier for the user
-  name: string;                            // User's name
-  age: number;                             // User's age
-  role: 'TEACHER' | 'STUDENT' | 'ADMIN';   // Union type: role can ONLY be one of these three strings
+  id: number; // Unique identifier for the user
+  name: string; // User's name
+  age: number; // User's age
+  role: 'TEACHER' | 'STUDENT' | 'ADMIN'; // Union type: role can ONLY be one of these three strings
 }
 
 /**
